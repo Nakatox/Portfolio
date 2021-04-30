@@ -1,0 +1,19 @@
+.naviguation{
+    background-color: $profile-back-color;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    a{
+        font-family: $font-2;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        opacity: 0.7;
+        padding: 0 10px;
+    }
+
+    .nav-active{
+        // border-bottom: $blue solid 2px;
+        opacity: 1;
+    }
+}

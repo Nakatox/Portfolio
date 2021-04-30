@@ -1,0 +1,86 @@
+.about_me>p:nth-child(1){
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about-barre{
+    width: 50px;
+    height: 10px;
+    background-color: var(--blue);
+    border-radius: 20px;
+}
+.about-intro{
+    line-height: 25px;
+    font-size: 18px;
+    padding-top: 20px;
+    opacity: 0.7;
+    max-width:750px;
+}
+.about-competences-container>p:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.about-competences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-competences>div{
+    margin: 15px;
+}
+.about-competence->div:nth-child(2)>p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    line-height: 20px;
+}
+.about-competence->div:nth-child(2)>p:nth-child(2){
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 25px;
+    padding-left: 3px;
+}
+.about-competence-{
+    display: flex;
+    background-color: var(--backgroung-color);
+    border-radius: 30px;
+    // height: 100px;
+    // width: 40vw;
+    padding: 15px;
+}
+.about-competence->div>img{
+    width: 4.5vw;
+    margin-right: 5px;
+    filter: brightness(0) invert(1);
+    /* padding-right: 5px; */
+}
+.hobbies>p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.content-hobbies>div{
+    display: flex;
+    background-color: var(--backgroung-color);
+    border-radius: 30px;
+    margin: 30px;
+}
+.content-hobbies>div>div:nth-child(2){
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 50px;
+    opacity: 0.8;
+}
+.content-hobbies>div>div>img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: solid var(--blue) 2px;
+}

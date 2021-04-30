@@ -1,0 +1,22 @@
+@import "./settings";
+@import "./reset";
+@import "./components/notfound";
+@import "./components/profile";
+@import "./components/content";
+@import "./components/naviguation";
+@import "./components/main";
+@import "./components/resume";
+@import "./components/cardrepo";
+
+@media screen and (width: 640px) {
+    .profile-container{
+        display: none;
+    }
+    .content-container{
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-competence-{
+        width: 100%;
+    }
+}

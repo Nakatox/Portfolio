@@ -1,0 +1,36 @@
+.card-container{
+    display: flex;
+    flex-wrap:wrap;
+    .card{
+        cursor: pointer;
+        background-color: $backgroung-color;
+        margin:20px 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid $backgroung-color 2px;
+        position: relative;
+        width: 400px;
+        min-width: 300px;
+        p{
+            padding: 10px 0;
+        }
+        .name{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .date{
+            opacity: 0.6;
+        }
+        .language{
+            opacity: 0.08;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+    .card:hover{
+        border-color:$blue;
+    }
+}

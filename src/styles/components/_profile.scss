@@ -1,0 +1,98 @@
+.profile-container{
+    font-family:$font-2;
+    background-color: $profile-back-color;
+    border-radius: 20px;
+    display: flex;
+    max-width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    height: 700px;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 100%;
+    position: sticky;
+    .image-container{
+        img{
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    .name{
+        p{
+            font-size: 40px;
+        }
+        span{
+            font-weight: bold;
+        }
+    }
+    .work{
+        background-color: $backgroung-color;
+        border-radius: 10px;
+        color: white;
+        padding: 7px;
+        width: fit-content;
+        font-size: 23px;
+    }
+    .socials{
+        display: flex;
+        background-color: $backgroung-color;
+        padding: 7px;
+        border-radius: 10px;
+        a{
+            color: white;
+            font-size: 20px;
+            margin: 5px;
+            // padding-bottom: 5px;
+            // border-bottom: white solid 1px;
+            transition:transform 0.2s ease;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        background-color: $backgroung-color;
+        padding: 7px;
+        border-radius: 10px;
+        a{
+            color: white;
+        }
+        *{
+            padding: 9px 0;
+        }
+    }
+    .cv{
+        background-color: $blue;
+        border-radius: 10px;
+        padding: 10px;
+        transition:transform 0.2s ease;
+        a{
+            color: white;
+            font-size: 22px;
+        }
+    }
+    .cv:hover{
+        
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 640px) {
+    .profile-container{
+        display: none;
+    }
+    .content-container{
+        width: fit-content;
+        max-width: 100%;
+    }
+    .about-competence-{
+        width: 100%;
+    }
+}

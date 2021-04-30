@@ -1,0 +1,28 @@
+
+body{
+    background-color: $backgroung-color;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        max-width: 1400px;
+        color: white;
+        font-family: $font-2;
+    }
+    .naviguation{
+        
+    }
+    .content-container>div:nth-child(2){
+        background-color: $profile-back-color;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0px;
+    }
+}
