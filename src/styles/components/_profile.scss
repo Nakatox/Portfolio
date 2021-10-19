@@ -84,15 +84,3 @@
         transform: scale(1.1);
     }
 }
-@media screen and (max-width: 640px) {
-    .profile-container{
-        display: none;
-    }
-    .content-container{
-        width: fit-content;
-        max-width: 100%;
-    }
-    .about-competence-{
-        width: 100%;
-    }
-}

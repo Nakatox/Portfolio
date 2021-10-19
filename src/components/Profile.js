@@ -22,7 +22,7 @@ function Profile() {
                 <a href="tel:0783832948">07 83 83 29 48</a>
             </div>
             <div className="cv">
-                <a href="https://drive.google.com/file/d/1vItmSgdNrJnjOhJndbIJKnCo3JVn_WZm/view?usp=sharing" >Voir mon CV</a>
+                <a href="https://drive.google.com/file/d/1NeTc4Gs-I8IqCF40pNH4GP6X9ElP1G62/view?usp=sharing" >Voir mon CV</a>
             </div>
         </div>
     )
