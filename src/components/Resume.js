@@ -4,23 +4,25 @@ import Profile from './Profile'
 function About() {
     return (
         <div className="container">
-        <Profile></Profile>
-        <div className="content-container">
+            <div className="bloc-top">
+                <div className="image-and-navi" >
+                    <div className="logo-container">
+                        <img src="img/logo-black.png" alt="" className="logo-vincent"></img>
+                    </div>
+                </div>
+                <Profile></Profile>
+            </div>
             <Naviguation></Naviguation>
+        <div className="content-container">
             <div className="resume">
                 <div className="titre-resume">
-                    <p>Résumé</p>
-                    <div className="barre-resume"></div>
-                    <p>Voici un résumé de mon parcour et des technologies que je maitrise actuellement.</p>
+                    <p>Edcucation</p>
                 </div>
                 <div className="parcour-resume">
                     <div className="education-parcour">
                         <div className="education-title">
                             <div>
                                 <img src="images/school.png" alt="" />
-                            </div>
-                            <div>
-                                <p>Edcucation</p>
                             </div>
                         </div>
                         <div className="education-contents">
@@ -94,7 +96,7 @@ function About() {
                                     <img src="img/musique.png" alt="" />
                                 </div>
                                 <div>
-                                    <p>Me perdre dans mes pensées avec une oeuvre d'Hans Zimmer.</p>
+                                    <p>J'aime travailler en musique, surtout avec du classique ou des bandes originales.</p>
                                 </div>
 
                             </div>

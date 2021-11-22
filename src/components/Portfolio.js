@@ -24,9 +24,16 @@ function Portfolio() {
     
     return (
         <div className="container">
-            <Profile></Profile>
+            <div className="bloc-top">
+                <div className="image-and-navi">
+                    <div className="logo-container">
+                        <img src="img/logo-black.png" alt="" className="logo-vincent"></img>
+                    </div>
+                </div>
+                <Profile></Profile>
+            </div>
+            <Naviguation></Naviguation>
             <div className="content-container">
-                <Naviguation></Naviguation>
                 <div className="card-container">
                     {data.map((e)=>
                         (

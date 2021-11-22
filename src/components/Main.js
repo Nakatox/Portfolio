@@ -1,77 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Naviguation from './Naviguation'
 import Profile from './Profile'
+import { motion } from 'framer-motion'
+import { CarSkill } from './CarSkill'
 
 function Main() {
+    const [opacity, setopacity] = useState(0)
+
+
     return (
         <div className="container">
-            <Profile></Profile>
+            <div className="bloc-top">
+                <div className="image-and-navi">
+                    <div className="logo-container">
+                        <img src="img/logo-black.png" alt="" className="logo-vincent"></img>
+                    </div>
+                </div>
+                <Profile></Profile>
+            </div>
+            <Naviguation></Naviguation>
             <div className="content-container">
-                <Naviguation></Naviguation>
                 <div className="about_me">
-                    <p>À propos de moi</p>
-                    <div className="about-barre"></div>
+                    <p className="about_me_text">À propos de moi</p>
                     <div className="about-intro">
-                        <p>Je suis développeur et étudiant à Epitech Digital avec un fort attrait pour React JS. Je maitrise également la partie back-end et SQL. J'ai toujours été passionné par le developpement, c'est pourquoi j'ai choisi d'en faire mon métier.</p>
+                        <p>Je suis développeur et étudiant à Epitech Digital avec un fort attrait pour React JS. Je maitrise également la partie back-end avec Django ou encore Symfony mais aussi la maitrise du SQL. J'ai toujours été passionné par le developpement, c'est pourquoi j'ai choisi d'en faire mon métier.</p>
                     </div>
-                    <div className="about-competences-container">
-                        <p>Mes compétences</p>
-                        <div className="about-competences">
-                            <div className="about-competence- about-competence-1">
-                                <div>
-                                    <img src="img/codage.png" alt="" />
-                                </div>
-                                <div>
-                                    <p>Intégration Web</p>
-                                    <p>Intégration site web,reponsive et dynamique. Utilisation d'API, librairie couplé avec React JS pour avoir un site performant.</p>
-                                </div>
-                            </div>
-                            <div className="about-competence- about-competence-2">
-                                <div>
-                                    <img src="img/database.png" alt="" />
-                                </div>
-                                <div>
-                                    <p>SQL/BDD</p>
-                                    <p>Création de base de donnée. Requêtes SQL.</p>
-                                </div>
-                            </div>
-                            <div className="about-competence- about-competence-3">
-                                <div>
-                                    <img src="img/back.png" alt="" />
-                                </div>
-                                <div>
-                                    <p>Back-end</p>
-                                    <p>Sécurité, interraction avec la base de donnée, algorithme.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="skills">
+                    
+                <div className="skills">
                     <div>
-                        <img src="images/codage.png" alt="" /><p>Technologies</p>
+                        <p>Technologies</p>
                     </div>
                 </div>
                 <div className="skills-desc">
-                    <div>
-                        <p>React</p>
-                        <p>React est mon framework favoris, la structure et la facon coder de ce framework m'intéresse vraiment. Ce site est d'ailleur codé en React.</p>
-                    </div>
-                    <div>
-                        <p>Javascript</p>
-                        <p>Rendre dynamique un site mais surtout maitriser des APIs m'intéresse énormément, j'ai beaucoup d'idées en tête pour la réalisation de projets avec elles.</p>
-                    </div>
-                    <div>
-                        <p>Php</p>
-                        <p>Communiquer avec la base do donnée, réaliser des interfaces de connexion ou encore créer des algorithmes.</p>
-                    </div>
-                    <div>
-                        <p>SQL</p>
-                        <p>Faire des requêtes SQL complexes pour réaliser toutes sortes fonctions, mais aussi créer des bases de données à partir de rien.</p>
-                    </div>
-                    <div>
-                        <p>HTML5/CSS3</p>
-                        <p>Intégrer des sites de A à Z à partir de maquette faite par des designers.</p>
-                    </div>
+                    <CarSkill img="img/react.png" title="React" content="React est le Framework avec lequelle j'ai le plus travaillé et donc celui avec lequelle je sui le plus à l'aise. Que ce soit pour des petits projets, comme des plus gros nottament une plateforme de visioconférence en direct entre plusieurs utilisateur dans la cadre du télétravail pour les étudiants." ></CarSkill>
+                    <CarSkill img="img/node.png" title="Node" content="J'utilise principalement NodeJs pour créer mes API REST. Je peux y ajouter du websocket qui est très bien géré ici. Il m'a aussi servi pour créer un serveur de visioconférence avec socket.io" ></CarSkill>
+                    <CarSkill img="img/symfony.png" title="Symfony" content="Symfony est pratique pour créer des applications rapidement grâce a tous les package disponible. J'ai recréé un Youtube (disponible dans l'onglet portfolio), ce fut un porjet très agréable à réaliser." ></CarSkill>
+                    <CarSkill img="img/django.png" title="Django" content="J'ai réalisé quelques projets avec Django, et sa simplicité d'utilisation notament avec son ORM rend très agréable l'utilisation de ce framework." ></CarSkill>
                 </div>
                 </div>
             </div>

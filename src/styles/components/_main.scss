@@ -1,79 +1,111 @@
-.about_me>p:nth-child(1){
-    font-size: 28px;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.about_me{
+    .about_me_text{
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $backgroung-color;
+        width: 100%;
+        padding: 10px 20px;
+        // border: 1px solid #9154f8;
+        border-radius: 10px;
+        div{
+            p{
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .skills{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 10px;
+        background-color: $backgroung-color;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .skills-desc{
+        // display: grid;
+        display: flex;
+        flex-wrap: wrap;
+
+        // // grid-template-columns: 33% 33% 33%;
+        // grid-template-columns: repeat(auto-fill, 300px);
+
+        .skill-content{
+            width: 30%;
+            max-width: 700px;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            // width: 300px;
+            transition: all 0.5s ease;
+            align-items: center;
+            padding: 15px 20px;
+            .image_skill{
+                width: 200px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+            }
+            p{
+                font-size: 24px;
+                padding: 10px;
+                
+            }
+            .skills-show-content{
+                // width: 100px;
+                line-height: 19px;
+                font-size: 15px;
+                opacity: 0.8;
+            }
+        }
+    } 
 }
-.about-barre{
-    width: 50px;
-    height: 10px;
-    background-color: var(--blue);
-    border-radius: 20px;
+.hobbies{
+    p{
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #272333;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
 }
+
 .about-intro{
     line-height: 25px;
-    font-size: 18px;
     padding-top: 20px;
-    opacity: 0.7;
     max-width:750px;
+    margin-left: 15px;
+    p{
+        font-weight: 200;
+        opacity: 0.7;
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
 }
-.about-competences-container>p:nth-child(1){
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.about-competences{
+.content-hobbies{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-.about-competences>div{
-    margin: 15px;
-}
-.about-competence->div:nth-child(2)>p:nth-child(1){
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 7px;
-    padding-left: 3px;
-    line-height: 20px;
-}
-.about-competence->div:nth-child(2)>p:nth-child(2){
-    font-size: 16px;
-    opacity: 0.7;
-    line-height: 25px;
-    padding-left: 3px;
-}
-.about-competence-{
-    display: flex;
-    background-color: var(--backgroung-color);
-    border-radius: 30px;
-    // height: 100px;
-    // width: 40vw;
-    padding: 15px;
-}
-.about-competence->div>img{
-    width: 4.5vw;
-    margin-right: 5px;
-    filter: brightness(0) invert(1);
-    /* padding-right: 5px; */
-}
-.hobbies>p{
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
+
 .content-hobbies>div{
     display: flex;
-    background-color: var(--backgroung-color);
+    background-color: #272333;
+    align-items: center;
     border-radius: 30px;
     margin: 30px;
+    flex-direction: column;
+    width: 300px;
+    min-width: 200px;
 }
-.content-hobbies>div>div:nth-child(2){
+.content-hobbies>div>div:nth-child(2)>p{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     padding: 30px;
     padding-top: 50px;
     opacity: 0.8;
@@ -82,5 +114,32 @@
     width: 130px;
     height: 130px;
     object-fit: cover;
-    border: solid var(--blue) 2px;
+    border: solid #00C5E3 1px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 950) {
+    .skills-desc{
+        display: grid;
+        // grid-template-columns: 33% 33% 33%;
+        grid-template-columns: repeat(auto-fill, 300px);
+
+        .skill-content{
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            // width: 300px;
+            transition: all 0.5s ease;
+            align-items: center;
+            padding: 10px 15px;
+            .skills-show-content{
+                // width: 100px;
+                line-height: 19px;
+                font-size: 15px;
+                opacity: 0.8;
+            }
+        }
+    }
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route , Redirect,  HashRouter } from "react-router-dom";
+import { Switch, Route , Redirect,  HashRouter } from "react-router-dom";
 import Resume from "./components/Resume";
 import Main from "./components/Main";
 import NotFound from "./pages/NotFound"

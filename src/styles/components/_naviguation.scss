@@ -1,8 +1,13 @@
 .naviguation{
     background-color: $profile-back-color;
-    width: fit-content;
+    // width: fit-content;
     padding: 10px 20px;
     border-radius: 10px;
+    height: 45px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    margin-top: 7px;
     a{
         font-family: $font-2;
         color: white;
@@ -11,9 +16,14 @@
         opacity: 0.7;
         padding: 0 10px;
     }
-
+    border-bottom: 3px solid #9154f8;
+    border-right: 3px solid #9154f8;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    
     .nav-active{
-        // border-bottom: $blue solid 2px;
         opacity: 1;
     }
+    
 }

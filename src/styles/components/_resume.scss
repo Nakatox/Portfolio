@@ -1,38 +1,36 @@
-.titre-resume>p:nth-child(1){
-    font-size: 28px;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.titre-resume{
+    p:nth-child(1){
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #272333;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
 }
-.titre-resume>p:nth-child(3){
-    font-size: 20px;
-    padding-bottom: 20px;
-    opacity: 0.8;
-}
-.barre-resume{
-    width: 50px;
-    height: 10px;
-    background-color: $blue;
-    border-radius: 20px;
-    margin-bottom:20px ;
-}
+
 .education-parcour{
     display: flex;
     flex-direction: column;
 }
 .education-title{
     display: flex;
-    margin-bottom: 20px;
 }
 .education-title>div>img{
     width: 50px;
     filter: brightness(0) invert(1);
 }
 .education-title>div>p{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #272333;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 .education-contents>div{
     margin-bottom: 20px;
@@ -59,7 +57,7 @@
 }
 .cercle-bleu{
     border-radius: 50%;
-    background-color: $blue;
+    background-color:#00C5E3;
     width: 10px;
     height: 10px;
 }
@@ -90,12 +88,7 @@
       justify-content: space-between;
       height: 200px;
 }
-.skills>div>p{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+
 .skills>div:nth-child(2)>div>p{
     font-size: 16px;
     /* padding-left: 10px; */
@@ -107,21 +100,6 @@
 }
 .skills-desc>div{
     background-color: $backgroung-color;
-    padding: 20px;
     border-radius: 30px;
     margin: 10px;
-}
-.skills-desc>div>p:nth-child(1){
-    font-size: 20px;
-    font-weight: bold;
-    border-left: solid $blue 3px;
-    border-radius:1px;
-    width: 50px;
-    padding-left: 5px;
-}
-.skills-desc>div>p:nth-child(2){
-    opacity: 0.8;
-    padding-top: 5px;
-    padding-left: 10px;
-
 }
